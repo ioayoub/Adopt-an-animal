@@ -3,28 +3,24 @@
     "id": 1,
     "title": "Cats",
     "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?",
-    "cardcolor": "bg-blue-500"
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?"
   },
   {
     "id": 2,
     "title": "Dogs",
     "image": "https://images.unsplash.com/photo-1542715234-4bafcfc68bd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?",
-    "cardcolor": "bg-purple-500"
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?"
   },
   {
     "id": 3,
     "title": "Horses",
     "image": "https://images.unsplash.com/photo-1603989888581-3115416784fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9yc2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?",
-    "cardcolor": "bg-orange-500"
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?"
   },
   {
     "id": 4,
     "title": "Others",
     "image": "https://images.unsplash.com/photo-1649785179009-bc9b16e8a6a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGV6YXJkc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?",
-    "cardcolor": "bg-green-500"
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi blanditiis, quaerat voluptates eligendi officia similique porro temporibus. Dolorum?"
   }
 ]

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function CategoryCard({ id, title, image, description, cardcolor }) {
+function CategoryCard({ id, title, image, description }) {
   return (
-    <div className="flex-1 items-center flex-col group">
+    <div className="flex-1 items-center flex-col group cursor-pointer">
       <div className="relative transform transition ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1000">
         <img
           src={image}
@@ -15,13 +15,11 @@ function CategoryCard({ id, title, image, description, cardcolor }) {
         </h3>
 
         <div className="absolute inset-0 h-64 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-black bg-opacity-70 hover:grayscale-0 mx-4">
-          <div
-            className={`flex flex-col justify-center items-center h-full text-white font-semibold group-hover:rotate-y-180 ${cardcolor}`}
-          >
+          <div className="flex flex-col justify-center items-center h-full text-white font-semibold group-hover:rotate-y-180">
             <p className="text-white px-4 text-center">{description}</p>
             <Link
               to={`/category/${id}`}
-              className="block bg-black text-white px-4 py-2 rounded-lg  mt-4"
+              className="block bg-white text-black px-4 py-2 rounded-lg  mt-4"
             >
               See more
             </Link>
@@ -37,7 +35,6 @@ CategoryCard.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  cardcolor: PropTypes.string.isRequired,
 };
 
 export default CategoryCard;

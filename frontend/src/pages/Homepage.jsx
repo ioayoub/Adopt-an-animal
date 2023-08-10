@@ -41,7 +41,8 @@ function Homepage() {
       </Link>
 
       <h2 className="text-center text-3xl my-24 font-bold">Our categories</h2>
-      <div className="flex flex-col lg:flex-row flex-wrap gap-4">
+      {/* <div className="flex flex-col lg:flex-row flex-wrap gap-4"> */}
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {categories.map((category) => (
           <CategoryCard
             key={category.id}
