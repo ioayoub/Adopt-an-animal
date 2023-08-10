@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <main className="bg-slate-50">
+      <main className="bg-slate-50 pb-12">
         <Navbar />
         <AppRoutes />
       </main>

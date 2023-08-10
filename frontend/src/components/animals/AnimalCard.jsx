@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function AnimalCard({ id, name, image, description }) {
   return (
     <div className="flex-1 mx-2">
-      <Link to="/animals/1">
+      <Link to={`/animals/${id}`}>
         <img src={image} alt={name} className="w-full h-64 object-cover" />
       </Link>
       <h3 className="text-xl font-bold my-2">{name}</h3>

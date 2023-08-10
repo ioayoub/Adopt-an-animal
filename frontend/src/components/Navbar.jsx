@@ -9,32 +9,32 @@ function Navbar() {
       path: "/",
     },
     {
-      name: "About",
-      path: "/about",
-    },
-    {
-      name: "Contact",
-      path: "/contact",
+      name: "Our animals",
+      path: "/animals",
     },
   ];
 
   return (
-    <Menu as="nav" className="bg-white p-4 shadow">
-      <div className="flex justify-between">
-        <Link to="/">
-          <h1 className="text-xl font-bold text-gray-800 items-center">
-            Adopt An Animal
-          </h1>
-        </Link>
-        <div className="flex flex-row justify-end gap-4 my-auto">
-          {navLinks.map((link) => (
-            <Menu.Item key={link.name}>
-              <Link to={link.path}>{link.name}</Link>
-            </Menu.Item>
-          ))}
+    <header>
+      <Menu as="nav" className="bg-white p-4 shadow">
+        <div className="flex justify-between">
+          <Link to="/">
+            <h1 className="text-xl font-bold text-gray-800 items-center">
+              Adopt An Animal
+            </h1>
+          </Link>
+          <div className="flex flex-row justify-end gap-4 my-auto">
+            {navLinks.map((link) => (
+              <Menu.Item key={link.name}>
+                <Link to={link.path} className="hover:font-bold">
+                  {link.name}
+                </Link>
+              </Menu.Item>
+            ))}
+          </div>
         </div>
-      </div>
-    </Menu>
+      </Menu>
+    </header>
   );
 }
 

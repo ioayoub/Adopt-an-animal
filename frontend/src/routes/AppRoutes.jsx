@@ -13,8 +13,6 @@ function AppRoutes() {
       <Route path="/animals" element={<AnimalList />} />
       <Route path="/animals/:id" element={<AnimalDetails />} />
       <Route path="/category/:id" element={<Category />} />
-      <Route path="/contact" element={<h1>Not Found</h1>} />
-      <Route path="/about" element={<h1>Not Found</h1>} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );

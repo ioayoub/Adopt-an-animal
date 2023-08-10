@@ -3,18 +3,24 @@
     "id": 1,
     "name": "Felix",
     "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem voluptatibus quas quae voluptas. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem voluptatibus quas quae voluptas. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem",
+    "category": "cats",
+    "categoryId": 1
   },
   {
     "id": 2,
     "name": "Rocket",
     "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem voluptatibus quas quae voluptas. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem voluptatibus quas quae voluptas. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem",
+    "category": "dogs",
+    "categoryId": 2
   },
   {
     "id": 3,
     "name": "Crazy",
     "image": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem voluptatibus quas quae voluptas. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem voluptatibus quas quae voluptas. Quisquam voluptate, quibusdam, quia, quod voluptatum quos dolorum exercitationem",
+    "category": "others",
+    "categoryId": 4
   }
 ]
