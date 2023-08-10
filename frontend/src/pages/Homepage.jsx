@@ -50,7 +50,6 @@ function Homepage() {
             title={category.title}
             description={category.description}
             image={category.image}
-            cardcolor={category.cardcolor}
           />
         ))}
       </div>

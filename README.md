@@ -20,6 +20,20 @@ If you are inspired by this project and want to help animals in real life, pleas
 
 More to come...
 
+## Database modeling
+
+![image](https://github.com/ioayoub/Adopt-an-animal/assets/66207978/46f9211b-8782-4a0b-b1d4-549628a2c4bf)
+
+As you can see, we'll use 5 different tables with different kind of relations.
+
+- user
+- animal
+- category
+- favorites
+- comment
+
+> Feel free to challenge yourself and add as many tables as you want.
+
 ## Setup & Use
 
 ### Windows users
