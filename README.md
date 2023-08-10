@@ -1,7 +1,24 @@
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying a pedagogical tool.
+The Adopt an Animal project is a pedagogical initiative that provides a virtual shelter for users to learn about different animals.
+
+Users can explore different animal pages, view different categories, and even visit real-world websites to make donations or adopt animals from the shelter and help them find loving homes.
+
+If you are inspired by this project and want to help animals in real life, please consider making a donation to a real association near your position. ❤️
+
+## Stack:
+
+- React with Vite.js
+- Express
+- MySQL
+
+## Branches
+
+- **main** : The main branch is the most recent branch.
+- **dev** : Development branch.
+- **starter**: The starter is the starter branch for the pedagogical purpose, only the frontend part is implemented here.
+
+More to come...
 
 ## Setup & Use
 
