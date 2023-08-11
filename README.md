@@ -22,7 +22,7 @@ More to come...
 
 ## Database modeling
 
-![image](https://github.com/ioayoub/Adopt-an-animal/assets/66207978/46f9211b-8782-4a0b-b1d4-549628a2c4bf)
+![image](https://github.com/ioayoub/Adopt-an-animal/assets/66207978/92a5ce13-177a-4b09-8b8a-9bc2177a48a9)
 
 As you can see, we'll use 5 different tables with different kind of relations.
 
