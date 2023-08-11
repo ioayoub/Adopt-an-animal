@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <header>
-      <Menu as="nav" className="bg-white p-4 shadow">
+      <Menu as="nav" className="bg-white p-4 shadow-lg">
         <div className="flex justify-between">
           <Link to="/">
             <h1 className="text-xl font-bold text-gray-800 items-center">

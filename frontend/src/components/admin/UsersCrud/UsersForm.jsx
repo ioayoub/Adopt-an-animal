@@ -1,5 +1,6 @@
 import propTypes from "prop-types";
 import { useState } from "react";
+
 import GenericForm from "../../forms/GenericForm";
 
 function UsersForm({ edit }) {
@@ -8,10 +9,10 @@ function UsersForm({ edit }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const onSubmit = (e) => {
+    e.preventDefault();
     // handle form submission here
-    console.info("Form submitted");
+    console.info("Form submitted", e);
   };
 
   const animalsFields = [
@@ -46,7 +47,7 @@ function UsersForm({ edit }) {
       <GenericForm
         name="Users"
         fields={animalsFields}
-        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
         edit={edit}
       />
     </div>
@@ -54,11 +55,11 @@ function UsersForm({ edit }) {
 }
 
 UsersForm.propTypes = {
-  edit: propTypes.bool.isRequired,
+  edit: propTypes.bool,
 };
 
-UsersForm.Default = {
-  edit: propTypes.bool,
+UsersForm.defaultProps = {
+  edit: false,
 };
 
 export default UsersForm;

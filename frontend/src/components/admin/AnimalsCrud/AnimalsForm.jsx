@@ -1,18 +1,18 @@
-import propTypes from "prop-types";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import axios from "axios";
+import propTypes from "prop-types";
+
 import GenericForm from "../../forms/GenericForm";
 
-function AnimalsForm({ edit }) {
+function AnimalsForm({ edit, resetTrigger, setResetTrigger }) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
   const [age, setAge] = useState("");
+  const [category, setCategory] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // handle form submission here
-    console.log("Form submitted");
-  };
+  const backUrl = import.meta.env.VITE_BACKEND_URL;
 
   const animalsFields = [
     {
@@ -39,25 +39,72 @@ function AnimalsForm({ edit }) {
       value: age,
       onChange: (e) => setAge(e.target.value),
     },
+    {
+      label: "Category",
+      type: "select",
+      value: category,
+      onChange: (e) => setCategory(e.target.value),
+      options: [
+        {
+          label: "Cats",
+          value: 1,
+        },
+        {
+          label: "Dogs",
+          value: 2,
+        },
+        {
+          label: "Horses",
+          value: 3,
+        },
+        {
+          label: "Others",
+          value: 4,
+        },
+      ],
+    },
   ];
+
+  const onSubmit = (data) => {
+    const formattedData = Object.entries(data).reduce((acc, [key, value]) => {
+      acc[key.toLowerCase()] = value;
+      return acc;
+    }, {});
+    axios
+      .post(`${backUrl}/api/animals/create`, formattedData)
+      .then((res) => {
+        if (res.data.insertId) {
+          setResetTrigger(!resetTrigger);
+
+          return toast.success("Animal created successfully");
+        }
+        return toast.error("Something went wrong");
+      })
+      .catch((err) => {
+        return toast.error(err.message);
+      });
+  };
 
   return (
     <div className="w-full">
       <GenericForm
         name="Animal"
         fields={animalsFields}
-        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
         edit={edit}
+        resetTrigger={resetTrigger}
       />
     </div>
   );
 }
 
 AnimalsForm.propTypes = {
-  edit: propTypes.bool.isRequired,
+  edit: propTypes.bool,
+  resetTrigger: propTypes.bool.isRequired,
+  setResetTrigger: propTypes.func.isRequired,
 };
 
-AnimalsForm.Default = {
+AnimalsForm.defaultProps = {
   edit: false,
 };
 
