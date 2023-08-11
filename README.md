@@ -14,9 +14,10 @@ If you are inspired by this project and want to help animals in real life, pleas
 
 ## Branches
 
-- **main** : The main branch is the most recent branch.
+- **main** : The main branch is the most recent branch combining all other branches.
 - **dev** : Development branch.
 - **starter**: The starter is the starter branch for the pedagogical purpose, only the frontend part is implemented here.
+- **db-setup**: Database setup, last step before removing static data files.
 
 More to come...
 
@@ -31,6 +32,7 @@ As you can see, we'll use 5 different tables with different kind of relations.
 - category
 - favorites
 - comment
+- adoption
 
 > Feel free to challenge yourself and add as many tables as you want.
 

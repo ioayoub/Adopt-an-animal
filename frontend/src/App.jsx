@@ -1,15 +1,20 @@
 import { BrowserRouter } from "react-router-dom";
-import "./App.css";
+import { ToastContainer } from "react-toastify";
+
 import AppRoutes from "./routes/AppRoutes";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <BrowserRouter>
-      <main className="bg-slate-50 pb-12">
+      <main className="bg-slate-50 ">
         <Navbar />
         <AppRoutes />
+        <ToastContainer />
       </main>
       <Footer />
     </BrowserRouter>
