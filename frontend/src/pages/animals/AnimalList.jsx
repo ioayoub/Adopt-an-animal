@@ -9,18 +9,16 @@ function AnimalList() {
 
   const handleSearch = (e) => {
     setSearchValue(e.target.value);
-    setCurrentAnimal(animals);
+    const currentSearch = e.target.value;
 
-    if (!searchValue) return;
-    if (searchValue.length < 2) return;
+    if (!currentSearch.trim().length) setCurrentAnimal(animals);
 
-    setCurrentAnimal(
-      animals.filter(
-        (animal) =>
-          animal.name.toLowerCase().includes(searchValue) ||
-          animal.category.toLowerCase().includes(searchValue)
-      )
-    );
+    if (currentSearch.trim().length > 0)
+      setCurrentAnimal(
+        animals.filter((animal) =>
+          animal.name.toLowerCase().includes(currentSearch.toLowerCase())
+        )
+      );
   };
 
   return (
@@ -38,18 +36,25 @@ function AnimalList() {
         />
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
-        {currentAnimal.map(({ id, name, category, image, description }) => (
-          <AnimalCard
-            key={id}
-            id={id}
-            name={name}
-            category={category}
-            image={image}
-            description={description}
-          />
-        ))}
-      </div>
+      {currentAnimal.length ? (
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* TODO fIX THIS */}
+          {currentAnimal.map(({ id, name, image, description, category }) => (
+            <AnimalCard
+              key={id}
+              id={id}
+              name={name}
+              category={category}
+              image={image}
+              description={description}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="text-center text-2xl font-bold py-16">
+          No animal found
+        </div>
+      )}
     </div>
   );
 }
