@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <BrowserRouter>
-      <main className="bg-slate-50 ">
+      <main className="bg-slate-50 min-h-screen">
         <Navbar />
         <AppRoutes />
         <ToastContainer />
