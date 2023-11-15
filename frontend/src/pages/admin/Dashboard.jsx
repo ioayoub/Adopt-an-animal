@@ -37,7 +37,7 @@ function Dashboard() {
 
   return (
     <div className="relative min-h-screen md:flex">
-      <div className="bg-blue-800 text-blue-200 flex justify-between md:hidden">
+      <div className="bg-black text-blue-200 flex justify-between md:hidden">
         <NavLink to="#" className="flex items-center space-x-5 px-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function Dashboard() {
       </div>
 
       <div
-        className={`bg-gradient-to-r from-blue-600 to-blue-500 w-64 space-y-6 px-2 py-6 absolute inset-y-0 left-0 transform transition duration-200 ease-in-out ${
+        className={`bg-gradient-to-r from-gray-900 to-gray-800 w-64 space-y-6 px-2 py-6 absolute inset-y-0 left-0 transform transition duration-200 ease-in-out ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:relative md:translate-x-0`}
       >
@@ -87,7 +87,7 @@ function Dashboard() {
             <NavLink
               key={link.title}
               to={link.path}
-              className="py-2.5 px-4 rounded flex items-center space-x-6 transition-duration-200 hover:bg-blue-700 hover:text-white"
+              className="py-2.5 px-4 rounded flex items-center space-x-6 transition-duration-200 hover:bg-gray-700 hover:text-white"
             >
               <svg
                 className="w-8 h-8 stroke-current"

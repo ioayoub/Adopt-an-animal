@@ -13,6 +13,7 @@ function AnimalsList({ resetTrigger }) {
     "age",
     "isAdopted",
     "category",
+    "Actions",
   ];
 
   const [data, setData] = useState([]);

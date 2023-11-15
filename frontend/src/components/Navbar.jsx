@@ -12,6 +12,10 @@ function Navbar() {
       name: "Our animals",
       path: "/animals",
     },
+    {
+      name: "Admin",
+      path: "/admin",
+    },
   ];
 
   return (
