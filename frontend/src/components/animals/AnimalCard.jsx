@@ -12,7 +12,7 @@ function AnimalCard({ id, name, image, description }) {
       <p className="text-gray-500">{description}</p>
       <Link
         to={`/animals/${id}`}
-        className="block bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-fit"
+        className="block bg-zinc-500 text-white px-4 py-2 rounded-lg mt-4 w-fit mx-auto"
       >
         Adopt me ❤️
       </Link>
